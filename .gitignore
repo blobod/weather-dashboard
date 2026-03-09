@@ -1,0 +1,20 @@
+# Environment variables
+.env
+
+# Java / Maven
+target/
+*.class
+*.jar
+
+# IntelliJ
+.idea/
+*.iml
+
+# Node / Vue
+node_modules/
+dist/
+.vite/
+frontend/.env
+
+# Mac
+.DS_Store
