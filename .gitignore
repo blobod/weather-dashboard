@@ -14,7 +14,6 @@ target/
 node_modules/
 dist/
 .vite/
-frontend/.env
 
 # Mac
 .DS_Store
