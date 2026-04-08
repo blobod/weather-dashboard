@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   db:
     image: postgres:15
@@ -41,7 +39,7 @@ services:
       - backend
 
   jenkins:
-    image: jenkins/jenkins:lts
+    build: ./jenkins
     container_name: weather-jenkins
     ports:
       - "8090:8080"
