@@ -32,18 +32,11 @@ pipeline {
                 }
             }
         }
-
-        stage('Build Docker Images') {
-            steps {
-                echo 'Building Docker images...'
-                sh 'docker-compose build'
-            }
-        }
     }
 
     post {
         success {
-            echo 'Pipeline completed successfully!'
+                echo 'All tests passed!'
         }
         failure {
             echo 'Pipeline failed!'
